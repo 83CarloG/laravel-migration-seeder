@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('position')
-
+    {{ $comic->title }}
 @endsection
 @section('content')
-            <div class="d-flex flex-column text-center justify-content-center align-items-center header__container ">
+            <div class="d-flex flex-column text-center justify-content-center align-items-center">
 
-                        <div class="card mt-2 card-body" style="width: 30rem;">
+                        <div class="card mt-2 card-body h-100" style="width: 30rem;">
                             <img class="card-img-top index__card" src="{{ $comic->cover }}" alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title">{{ $comic->title }}</h4>
