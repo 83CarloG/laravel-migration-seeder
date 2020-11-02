@@ -13,6 +13,8 @@ class CreateComicsTable extends Migration
      */
     public function up()
     {
+        // Creo la mia tabella Comics con le sue colonne
+
         Schema::create('comics', function (Blueprint $table) {
             $table->id();
             $table->string('title', 30);
@@ -26,6 +28,7 @@ class CreateComicsTable extends Migration
             $table->boolean('color')->default(false);
             $table->year('release');
             $table->string('cover')->default('https://via.placeholder.com/200x300');
+            $table->text('description');
             $table->timestamps();
         });
     }
