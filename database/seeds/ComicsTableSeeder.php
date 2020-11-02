@@ -31,7 +31,6 @@ class ComicsTableSeeder extends Seeder
             $newComic->color = rand(0, 1);
             $newComic->release = $faker->year();
             $newComic->cover = $faker->imageUrl(200, 300);
-            $newComic->cover = $faker->imageUrl(200, 300);
             $newComic->description = $faker->text($maxNbChars = 200);
             $newComic->save();
         }
